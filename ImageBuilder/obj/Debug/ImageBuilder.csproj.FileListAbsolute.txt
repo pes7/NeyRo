@@ -1,0 +1,8 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\bin\Debug\ImageBuilder.exe.config
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\bin\Debug\ImageBuilder.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\bin\Debug\ImageBuilder.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\obj\Debug\ImageBuilder.Form1.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\obj\Debug\ImageBuilder.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\obj\Debug\ImageBuilder.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\obj\Debug\ImageBuilder.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\ImageBuilder\obj\Debug\ImageBuilder.pdb
