@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -19,9 +20,13 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+        /*
+         * y=sqrt(10^4-x^2)+abs(tg(x)*k)-m*2
+         * y=sin(x)*m+abs(tg(x)*k)-m*2
+         */
         Bitmap original;
         OLua lua = new OLua();
-        string image = "3.jpg";
+        string image = "11.png";
         private void Form1_Load(object sender, EventArgs e)
         {
             label1.Text = $"{255 - trackBar1.Value}";
@@ -75,7 +80,8 @@ namespace WindowsFormsApp2
         
         private Bitmap changeOrig(Bitmap green, Bitmap blue, Bitmap red)
         {
-            Bitmap bt = new Bitmap(original.Width,original.Height);
+            Bitmap bt = new Bitmap(original.Width,original.Height, PixelFormat.Format32bppArgb);
+            //bt.MakeTransparent(Color.FromArgb(0,255,255,255));
             /*
             switch (Choosed)
             {
@@ -128,8 +134,11 @@ namespace WindowsFormsApp2
                         int r = (int)(dss.R );
                         int g = (int)(dss.G );
                         int b =(int)(dss.B );
-                        var c = Color.FromArgb(r, g, b);
-                        bt.SetPixel((int)(start_x + x), (int)(start_y + (-1) * y), c);
+                        if (!dss.IsEmpty)
+                        {
+                            var c = Color.FromArgb(r, g, b);
+                            bt.SetPixel((int)(start_x + x), (int)(start_y + (-1) * y), c);
+                        }
                     }
                 }
             }

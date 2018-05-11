@@ -23,6 +23,9 @@ namespace Parabollian
             Lua.RegisterFunction("tg", this, typeof(OLua).GetMethod("tg"));
             Lua.RegisterFunction("ctg", this, typeof(OLua).GetMethod("ctg"));
 
+            Lua.RegisterFunction("ln", this, typeof(OLua).GetMethod("ln"));
+            Lua.RegisterFunction("log", this, typeof(OLua).GetMethod("log"));
+
             Lua.RegisterFunction("abs", this, typeof(OLua).GetMethod("abs"));
             Lua.RegisterFunction("ceil", this, typeof(OLua).GetMethod("ceil"));
             Lua.RegisterFunction("exp", this, typeof(OLua).GetMethod("exp"));
@@ -38,7 +41,9 @@ namespace Parabollian
         public float sin(double x) { return (float)Math.Sin(x); }
         public float cos(double x) { return (float)Math.Cos(x); }
         public float tg(double x) { return (float)Math.Tan(x); }
-        public float ctg(double x) { return (float)Math.Atan(x/1); }
+        public float ctg(double x) { return (float)Math.Atan(x / 1); }
+        public float ln(double x) { return (float)Math.Log10(x); }
+        public float log(double x) { return (float)Math.Log(x); }
 
         public float abs(double x) { return (float)Math.Abs(x); }
         public float ceil(double x) { return (float)Math.Ceiling(x); }

@@ -9,3 +9,4 @@ C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\WindowsFormsApp2\obj\D
 C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\WindowsFormsApp2\bin\Debug\lua51.dll
 C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\WindowsFormsApp2\bin\Debug\LuaInterface.dll
 C:\Users\user\Documents\Visual Studio 2017\Projects\NeyRo\WindowsFormsApp2\bin\Debug\luanet.dll
+C:\Users\user\documents\visual studio 2017\Projects\NeyRo\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojResolveAssemblyReference.cache
